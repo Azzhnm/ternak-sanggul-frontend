@@ -480,6 +480,7 @@ button:hover {
   border: none;
   border-radius: 16px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .accordion-item:first-child .accordion-button {
