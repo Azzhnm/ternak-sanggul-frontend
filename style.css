@@ -1,0 +1,714 @@
+body {
+  padding-top: 4.5rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional: Add this in your style.css */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+    /* Ensures content within the container has padding */
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 10px;
+}
+h1 {
+  font-weight: 600;
+  font-style: normal;
+  color: #17412d;
+}
+
+.banner {
+  background-image: url("assets/image/Background.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.banner h1 {
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+}
+
+/* NAVBAR STYLE*/
+.navbar {
+  background-color: #17412d;
+  padding-left: 25px;
+  padding: 20px;
+}
+
+.nav-link {
+  margin: 8px;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #fff;
+  /* Active menu item underline */
+}
+
+/* Smaller screens menu background */
+@media (max-width: 767.98px) {
+  .nav-link.active {
+    background-color: #003019;
+    /* Active menu item underline */
+    border-radius: 8px;
+    padding: 8px;
+  }
+}
+
+/* Fixed Navbar with show/hide on scroll (optional for extra effect) */
+.navbar.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* _______________________________________________________________________________________________________________ */
+
+/* FOOTER */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrapper {
+  background-color: #17412d;
+  color: white;
+  padding: 2rem;
+  flex-shrink: 0;
+}
+
+.copyright-wrapper {
+  background-color: #17412d;
+  color: white;
+  padding: 1rem 0;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  margin: 0.5rem 0;
+}
+
+.footer-contact {
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.footer-contact a {
+  font-size: 12px;
+  text-align: left;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact span {
+  display: block;
+  margin-top: 10px;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  vertical-align: top; /* Ikon tetap di bagian atas dan sejajar dengan teks */
+  font-size: 14px;
+}
+
+.footer-contact div {
+  display: flex;
+  align-items: flex-start; /* Memastikan ikon dan teks sejajar di bagian atas */
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.footer-contact p {
+  margin-left: 0.5rem;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-contact {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .footer-contact div {
+    justify-content: flex-start; /* Pastikan ikon tetap di kiri teks */
+    align-items: flex-start; /* Ikon tetap di atas pada layar kecil */
+  }
+
+  .footer-contact p {
+    margin-left: 0.5rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-wrapper {
+    padding: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    text-align: left;
+  }
+
+  .footer-logo {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .footer-contact div {
+    flex-direction: row;
+    align-items: flex-start; /* Pastikan ikon tetap di kiri */
+  }
+
+  .footer-contact p {
+    margin-left: 0.5rem;
+    text-align: left;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* CARAOUSEL */
+.carousel-inner {
+  height: 500px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Teks dan gambar sejajar di layar besar (>= 992px) */
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-content h1 {
+  font-size: 48px;
+  text-align: left;
+}
+
+/* Responsif untuk layar besar */
+@media (min-width: 992px) {
+  .carousel-content h1 {
+    font-size: 72px;
+  }
+}
+
+/* Tampilan teks di layar kecil */
+@media (max-width: 991px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.custom-carousel-control {
+  background-color: #17412d;
+  /* Background hijau */
+  border-radius: 50%;
+  /* Membuat lingkaran */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 40px;
+  /* Jarak dari tepi kiri */
+}
+
+.carousel-control-next {
+  right: 40px;
+  /* Jarak dari tepi kanan */
+}
+
+.custom-carousel-control .carousel-control-prev-icon,
+.custom-carousel-control .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* Carousel image adjustment */
+.carousel-image {
+  object-fit: cover;
+  /* Gambar tetap proporsional */
+  height: 500px;
+  /* Ukuran tetap, dapat disesuaikan */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px;
+    /* Ukuran gambar lebih kecil di layar kecil */
+  }
+
+  .custom-carousel-control {
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-carousel-control .carousel-control-prev-icon,
+  .custom-carousel-control .carousel-control-next-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* KONTEN HOME----------------------------------------------------------------------------------------------------------------- */
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Optional: Add some media queries for further refinement if needed */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+    /* Add some spacing for smaller screens */
+  }
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-card {
+  text-align: center;
+  height: auto;
+}
+
+.card-porto {
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: auto;
+}
+
+.card-porto img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.article-list {
+  padding: 20px 20px;
+}
+
+.container-article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #17412d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7f00;
+}
+
+.text {
+  text-align: left;
+  padding-top: 10px;
+  color: #fff;
+}
+
+/* FAQ STYLE----------------------------------------------------------------------------------------------------------------- */
+
+.accordion-header {
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.accordion-button {
+  padding-left: 64px;
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button::after {
+  position: absolute;
+  left: 10px;
+  margin-right: 10px;
+  color: solid currentColor;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #17412d;
+  color: #fff;
+  border: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  color: white;
+}
+
+.accordion-body {
+  background-color: #17412d;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 64px;
+  margin-top: 0;
+  border-radius: 0 0 16px 16px;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.accordion-item:first-child .accordion-button {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.accordion-button:hover {
+  background-color: #17412d;
+  color: #ffffff;
+}
+
+/* CONTACT STYLE _____________________________________________________________________________________________________________ */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.contact-box {
+  width: 300px;
+  height: 200px;
+  background-color: #17412d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inner-box {
+  width: 100%;
+  height: 100%;
+  background-color: #8a9a86;
+  /* Inner Box Background */
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact-text {
+  font-size: 16px;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* MITRA STYLE ---------------------------------------------------------------------------------------------- */
+
+/* Styling container gambar */
+.image-container {
+  position: relative;
+  background-color: #17412d;
+  padding: 50px 50px 0px 50px;
+  border-radius: 12px;
+}
+
+/* Jarak antar gambar lebih luas dan ukuran gambar responsif */
+.image-container img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.content p {
+  margin-bottom: 20px;
+  /* Tambahkan jarak antar paragraf */
+}
+
+.button-container {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.button-container .btn {
+  background-color: #17412d;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Gambar menonjol keluar setengah dari kontainer */
+
+.image-half {
+  position: relative;
+  /* transform: translateY(-50%); */
+}
+
+@media (min-width: 768px) {
+  .image-half {
+    transform: translateY(-20%);
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .button-container .btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+}
+
+/* TENTANG KAMI--------------------------------------------------------------------------------------------------- */
+.sanggul-image {
+  position: relative;
+  padding: 20px 0;
+  border-radius: 13px;
+}
+
+.sanggul-image img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.hero-section {
+  background: url("https://placehold.co/1920x400") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.content-section {
+  padding: 50px 0;
+}
+
+.content-section h2 {
+  color: #17412d;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.content-section p {
+  color: #333;
+}
+
+.content-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.green-section {
+  background-color: #17412d;
+  color: white;
+  padding: 72px 0;
+  margin-top: 50px;
+  height: 300px;
+}
+
+.green-section p {
+  color: white;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-card {
+  text-align: center;
+  height: 200px;
+}
+
+.card-porto {
+  text-align: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .image-container img {
+    height: auto;
+  }
+  .green-section {
+  height: 600px;
+  padding: 50px 0;
+}
+}
+
+/* Gambar menonjol keluar setengah dari kontainer */
+.image-half {
+  position: relative;
+  transform: translateY(-25%);
+}
+
+@media (min-width: 768px) {
+  .image-half {
+    transform: translateY(-50%);
+  }
+}
